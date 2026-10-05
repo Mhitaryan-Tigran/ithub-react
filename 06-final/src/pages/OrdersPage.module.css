@@ -1,0 +1,33 @@
+.orders {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.order {
+  display: grid;
+  gap: 8px;
+  padding: 20px;
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.items {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 4px;
+}
+
+.total {
+  justify-self: end;
+  font-variant-numeric: tabular-nums;
+}

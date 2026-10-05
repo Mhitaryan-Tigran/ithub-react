@@ -1,0 +1,50 @@
+.search {
+  display: flex;
+  gap: 8px;
+  max-width: 520px;
+  margin-bottom: 16px;
+}
+
+.search input {
+  flex: 1;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.chip,
+.chipActive {
+  min-height: 36px;
+  padding: 0 16px;
+  border-radius: 980px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  font-size: 15px;
+  cursor: pointer;
+  transition: transform 0.2s var(--spring);
+}
+
+.chip:active,
+.chipActive:active {
+  transform: scale(0.96);
+}
+
+.chipActive {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--bg);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

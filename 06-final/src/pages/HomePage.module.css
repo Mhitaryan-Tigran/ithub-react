@@ -1,0 +1,29 @@
+.hero {
+  display: grid;
+  gap: 16px;
+  justify-items: center;
+  padding: 64px 0;
+  text-align: center;
+}
+
+.title {
+  max-width: 18ch;
+  margin: 0;
+  font-size: clamp(36px, 6vw, 64px);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.lead {
+  max-width: 52ch;
+  margin: 0;
+  color: var(--muted);
+  font-size: 19px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 8px;
+}

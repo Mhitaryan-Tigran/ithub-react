@@ -1,0 +1,35 @@
+.board {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 8px;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 21px;
+}
+
+.counter {
+  color: var(--muted);
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.empty {
+  margin: 24px 0 8px;
+  text-align: center;
+  color: var(--muted);
+}

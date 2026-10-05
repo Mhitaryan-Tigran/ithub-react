@@ -1,0 +1,155 @@
+.center {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px 16px;
+}
+
+.page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 16px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.top h1,
+.card h1 {
+  margin: 0;
+  font-size: clamp(28px, 4vw, 40px);
+  letter-spacing: -0.02em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+
+.card {
+  display: grid;
+  gap: 14px;
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 24px;
+  width: min(100%, 460px);
+}
+
+.grid .card {
+  width: auto;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 21px;
+}
+
+.card h3 {
+  margin: 8px 0 0;
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.input {
+  min-height: 44px;
+  padding: 0 14px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.input[aria-invalid='true'] {
+  border-color: var(--danger);
+}
+
+.error {
+  color: var(--danger);
+  font-size: 13px;
+}
+
+.formError {
+  margin: 0;
+  color: var(--danger);
+}
+
+.button,
+.ghost {
+  min-height: 40px;
+  padding: 0 18px;
+  border-radius: 980px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: transform 0.2s var(--spring);
+}
+
+.button {
+  border: 0;
+  background: var(--accent);
+  color: #fff;
+}
+
+.ghost {
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+}
+
+.button:active,
+.ghost:active {
+  transform: scale(0.96);
+}
+
+.button:disabled {
+  opacity: 0.5;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.muted {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.list {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 6px;
+}
+
+.code {
+  white-space: pre-wrap;
+  padding: 12px;
+  border-radius: 12px;
+  background: var(--bg);
+  font: 12px/1.5 ui-monospace, Menlo, monospace;
+  word-break: break-all;
+}
+
+.log {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 4px;
+  font: 12px/1.5 ui-monospace, Menlo, monospace;
+  color: var(--muted);
+}

@@ -1,0 +1,72 @@
+.card {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  border-radius: var(--radius);
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.body {
+  display: grid;
+  gap: 6px;
+  align-content: start;
+  padding: 20px 20px 8px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.category {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.title {
+  font-size: 19px;
+}
+
+.body:hover .title {
+  color: var(--accent);
+}
+
+.description {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px 20px;
+}
+
+.price {
+  white-space: nowrap;
+  font-size: 17px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.add {
+  white-space: nowrap;
+  min-height: 36px;
+  padding: 0 16px;
+  border-radius: 980px;
+  border: 0;
+  background: var(--accent);
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.2s var(--spring);
+}
+
+.add:active {
+  transform: scale(0.96);
+}
+
+.add:disabled {
+  background: transparent;
+  color: var(--muted);
+  cursor: default;
+}

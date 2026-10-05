@@ -1,0 +1,44 @@
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 48px;
+  border-top: 1px solid var(--line);
+}
+
+.item:first-child {
+  border-top: 0;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  flex: 1;
+  min-height: 44px;
+}
+
+.check {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--accent);
+}
+
+.title {
+  transition: color 0.2s var(--spring);
+}
+
+.done {
+  color: var(--muted);
+  text-decoration: line-through;
+}
+
+.badge {
+  font-size: 12px;
+  color: var(--ok);
+  border: 1px solid currentColor;
+  border-radius: 980px;
+  padding: 2px 10px;
+}
